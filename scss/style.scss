@@ -4,4 +4,65 @@
     padding: 0;
 	margin: 0;
 	border: 0;
+	font-family: Arial, sans-serif;
 }
+
+.goods_theme_original {
+	width: 475px;
+	background-color: green;
+}
+
+.goods-item_theme_original {
+	width: 153px;
+	border: 3px solid $goodsItemBorderColor;
+	background-color: pink;
+}
+
+.goods-item__img-container_theme_original {
+	margin-top: 9px;
+    margin-left: 7px;
+}
+
+.goods-item__name_theme_original {
+	margin-left: 8px;
+	margin-top: 6px;
+	height: 58px;
+	font-size: 13px;
+	line-height: 16px;
+}
+
+.goods-item__price_theme_original,
+.goods-item__button_theme_original {
+	display: inline-block;
+}
+
+.goods-item__price_theme_original {
+	margin-left: 0 0 0 7px;
+	font-size: 15px;
+
+	.goods-item__dollars-span_theme_original {
+		font-weight: bold;
+		font-size: 17px;
+	}
+
+	.goods-item__cents-span_theme_original {
+		font-size: 12px;
+	}
+}
+
+.goods-item__button_theme_original {
+	margin-left: 8px;
+    
+    background-color: $buttonBackgroundColor;
+	// padding: 7px 6px 8px;
+	width: 74px;
+    height: 30px;
+}
+
+.goods-item__button-span_original {
+	font-size: 12px;
+}
+
+Никита 
+
+
