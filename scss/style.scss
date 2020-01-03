@@ -96,9 +96,36 @@
 
 .goods-item__black-stars-container_theme_original,
 .goods-item__orange-stars-container_theme_original {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	position: absolute;
+	background-color: #fafafa;
 }
 
 .goods-item__black-stars-container_theme_original {
 	display: none;
 }
+
+.goods-item__star-img_theme_original {
+	width: 13px;
+
+	&:first-child {
+		padding-left: 5px;
+	}
+
+	&:last-child {
+		padding-right: 5px;
+	}
+}
+
+.orange_star_png {
+	background-image: url("test for front-end developer-восстановлено-assets/orange-star.png");
+	position: absolute;
+	left: 58px;
+	top: 264px;
+	width: 12px;
+	height: 11px;
+	z-index: 72;
+}
+  
