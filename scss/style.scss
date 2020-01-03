@@ -78,21 +78,26 @@
 }
 
 .goods-item__rating_theme_original {
+	position: relative;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	height: 52px;
+	height: 50px;
 	background-color: forestgreen;
 }
 
-.goods-item__span_theme_original {
-	// margin: 10px auto;
+.goods-item__line_theme_original {
+	// position: absolute;
 	width: 100%;
 	background-color: red;
-	height: 2px;
+	height: 1px;
 }
 
-
+.goods-item__black-stars-container_theme_original,
+.goods-item__orange-stars-container_theme_original {
+	position: absolute;
+}
 
 .goods-item__black-stars-container_theme_original {
 	display: none;
