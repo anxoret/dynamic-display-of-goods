@@ -112,3 +112,7 @@
   height: 11px; }
   .goods-item__star-img_theme_original:last-child {
     margin-right: 0; }
+
+.goods-item__text-description_theme_original {
+  font-size: 11px;
+  line-height: 14px; }
