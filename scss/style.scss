@@ -85,6 +85,8 @@
 	align-items: center;
 	height: 50px;
 	background-color: forestgreen;
+	margin-left: 7px;
+	margin-right: 11px;
 }
 
 .goods-item__line_theme_original {
@@ -101,6 +103,8 @@
 	justify-content: center;
 	position: absolute;
 	background-color: #fafafa;
+	width: 60px;
+	height: 12px;
 }
 
 .goods-item__black-stars-container_theme_original {
@@ -108,24 +112,22 @@
 }
 
 .goods-item__star-img_theme_original {
-	width: 13px;
-
-	&:first-child {
-		padding-left: 5px;
-	}
-
-	&:last-child {
-		padding-right: 5px;
-	}
-}
-
-.orange_star_png {
-	background-image: url("test for front-end developer-восстановлено-assets/orange-star.png");
-	position: absolute;
-	left: 58px;
-	top: 264px;
+	margin-right: 2px;
 	width: 12px;
 	height: 11px;
-	z-index: 72;
+
+	&:last-child {
+		margin-right: 0;
+	}
 }
+
+// .orange_star_png {
+// 	background-image: url("test for front-end developer-восстановлено-assets/orange-star.png");
+// 	position: absolute;
+// 	left: 58px;
+// 	top: 264px;
+// 	width: 12px;
+// 	height: 11px;
+// 	z-index: 72;
+// }
   
