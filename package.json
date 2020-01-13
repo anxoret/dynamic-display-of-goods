@@ -1,0 +1,24 @@
+{
+  "name": "dynamic-display-of-goods",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dynamic-display-of-goods.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anxoret/dynamic-display-of-goods.git"
+  },
+  "keywords": [
+    "javascipt",
+    "js",
+    "webpack"
+  ],
+  "author": "anxoret",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anxoret/dynamic-display-of-goods/issues"
+  },
+  "homepage": "https://github.com/anxoret/dynamic-display-of-goods#readme"
+}

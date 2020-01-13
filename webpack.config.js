@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
     entry: {
-        slideshow: "./src/js/goods.js"
+        dynamicGoods: "./src/js/dynamic-display-of-goods.js"
     },
     output: {
         filename: "[name].js",
