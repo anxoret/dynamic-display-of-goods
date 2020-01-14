@@ -1,43 +1,35 @@
 "use strict"
 
-class mGoods {
-    constructor (arrayOfGoods) {
-        this.arrayOfItems = arrayOfGoods;
-        this.itemOnFocus = null;
+class mProducts {
+    constructor (arrayOfProducts) {
+        this.arrayOfProducts = arrayOfProducts;
+        this.productOnFocus = null;
     }
 
-    getArrayOfItems() {
-        return this.arrayOfItems;
+    getArrayOfProducts() {
+        return this.arrayOfProducts;
     }
 
-    setItemOnFocus(itemNumber) {
-        this.itemOnFocus = itemNumber;
+    setProductOnFocus(productNumber) {
+        this.productOnFocus = productNumber;
     }
 
-    getItemOnFocusNumber() {
-        return this.itemOnFocus;
+    getProductOnFocusNumber() {
+        return this.productOnFocus;
     }
 };
 
-let goods = [];
+let products = [];
 
 export const mCreateGoods = (arrayOfGoods) => {
-    if (Object.prototype.toString.call(arrayOfGoods) !== "[object Array]") {
-        throw new Error("Array of goods must have a data type Array.");
-    }
-
-    if ( !(arrayOfGoods.length) ) {
-        throw new Error("Array of goods can not be empty.");
-    }
-
-    goods = new mGoods(arrayOfGoods);
+    products = new mGoods(arrayOfGoods);
 };
 
-export const mGetArrayOfGoodsItems = () => {
-    return goods.getArrayOfItems();
+export const mGetArrayOffProducts = () => {
+    return products.getArrayOfProducts();
 };
 
-export const mGetGoodsItemOnFocusNumber = () => {
-    return goods.getItemOnFocusNumber();
+export const mGetProductOnFocusNumber = () => {
+    return products.getProductOnFocusNumber();
 };
 

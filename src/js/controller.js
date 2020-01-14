@@ -1,13 +1,35 @@
 "use strict"
 
-import {mCreateGoods} from "./model.js";
-import {vCreateGoods} from "./view.js"; 
-import {mGetArrayOfGoodsItems} from "./model.js";
+import {mCreateProducts} from "./model.js";
+import {vCreateProducts} from "./view.js"; 
+import {mGetArrayOfProducts} from "./model.js";
 
-export const cCreateGoods = (arrayOfGoods) => {
-    mCreateGoods(arrayOfGoods);
-    vCreateGoods(
-        mGetArrayOfGoodsItems()
+let productPropertyNames = [
+    "name",
+    "imgSrc", 
+    "alt", 
+    "priceDollars", 
+    "priceCents", 
+    "ratingStarsNumber", 
+    "textDescription"
+    ];
+
+const cCheckProductItem = (arrayOfProduct) => {
+    if (Object.prototype.toString.call(arrayOfProduct) !== "[object Array]") {
+        throw new Error("Array of product must have a data type Array.");
+    }
+
+    if ( !(arrayOfProduct.length) ) {
+        throw new Error("Array of product can not be empty.");
+    }
+
+
+}
+
+export const cCreateProducts = (arrayOfProduct) => {
+    mCreateProducts(arrayOfProduct);
+    vCreateProducts(
+        mGetArrayOfProducts()
     );
 };
 

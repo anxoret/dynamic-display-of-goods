@@ -1,8 +1,8 @@
 "use strict"
 
-import {cCreateGoods} from "./controller"; 
+import {cCreateProducts} from "./controller"; 
 
-let arrayOfGoods = [
+let arrayOfProducts = [
     {
         name: "Coalesce: Functioning On Impatience T-Shirt",
         imgSrc: "./img/coalesce-functioning-on-impatience-t-shirt.png",
@@ -113,5 +113,5 @@ let arrayOfGoods = [
     },
 ];
 
-let dynamicGoods = cCreateGoods(arrayOfGoods);
+let dynamicGoods = cCreateProducts(arrayOfProducts);
 
