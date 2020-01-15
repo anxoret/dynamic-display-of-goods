@@ -21,11 +21,11 @@ class mProducts {
 
 let products = [];
 
-export const mCreateGoods = (arrayOfGoods) => {
-    products = new mGoods(arrayOfGoods);
+export const mCreateProducts = (arrayOfGoods) => {
+    products = new mProducts(arrayOfGoods);
 };
 
-export const mGetArrayOffProducts = () => {
+export const mGetArrayOfProducts = () => {
     return products.getArrayOfProducts();
 };
 
