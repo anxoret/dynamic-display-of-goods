@@ -17,8 +17,8 @@
 
 .product_theme_original {
 	width: 152px;
-	border: 3px solid $goodsItemBorderColor;
-	background-color: pink;
+	border: 3px solid pink;
+	background-color: pink; // white!
 }
 
 .product__img-container_theme_original {
@@ -102,7 +102,7 @@
 
 .product__line_theme_original {
 	width: 100%;
-	background-color: red;
+	background-color: $greyColor;
 	height: 1px;
 }
 
@@ -118,6 +118,14 @@
 }
 
 .product__black-stars-container_theme_original {
+
+}
+
+.product__orange-stars-container_theme_original {
+
+}
+
+.product__orange-stars-container_close {
 	display: none;
 }
 
@@ -134,6 +142,10 @@
 .product__additional-info_theme_original {
 	margin: 0 auto 10px;
 	width: $imgWidth;
+}
+
+.product__additional-info_close {
+	display: none;
 }
   
 .product__text-description_theme_original {

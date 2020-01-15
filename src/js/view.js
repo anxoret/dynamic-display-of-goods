@@ -47,7 +47,7 @@ const vGetProductRatingContent = (product) => {
         <div class="product__black-stars-container product__black-stars-container_theme_original">
             ${vGetRatingStars("./img/black-star.png", "black-star", product.ratingStarsAmount)}
         </div>
-        <div class="product__orange-stars-container product__orange-stars-container_theme_original">
+        <div class="product__orange-stars-container product__orange-stars-container_theme_original product__orange-stars-container_close">
             ${vGetRatingStars("./img/orange-star.png", "orange-star", product.ratingStarsAmount)}
         </div>
     `;
@@ -113,7 +113,7 @@ const vCreateProduct = (product) => {
     vProduct.append(productRating);
 
     let productAdditionalInfo = document.createElement("div");
-    productAdditionalInfo.className = "product__additional-info product__additional-info_theme_original";
+    productAdditionalInfo.className = "product__additional-info product__additional-info_theme_original product__additional-info_close";
     productAdditionalInfo.innerHTML = `<p class="product__text-description product__text-description_theme_original">${product.textDescription}</p>`;
     vProduct.append(productAdditionalInfo);
 };
@@ -123,3 +123,14 @@ export const vCreateProducts = (arrayOfProducts) => {
         vCreateProduct(product);
     });   
 };
+
+export const vShowProductAdditionalInfo = (vProduct) => {
+    let productAdditionalInfo = vProduct.querySelector(".product__additional-info");
+    productAdditionalInfo.classList.remove("product__additional-info_close");
+};
+
+export const vHideProductAdditionalInfo = (vProduct) => {
+    let productAdditionalInfo = vProduct.querySelector(".product__additional-info");
+    productAdditionalInfo.classList.add("product__additional-info_close");
+};
+

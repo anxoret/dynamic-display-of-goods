@@ -1,6 +1,8 @@
 "use strict"
 
 import {cCreateProducts} from "./controller"; 
+import {cShowProductAdditionalInfo} from "./controller";
+import {cHideProductAdditionalInfo} from "./controller";
 
 let arrayOfProducts = [
     {
@@ -113,5 +115,22 @@ let arrayOfProducts = [
     },
 ];
 
-let dynamicGoods = cCreateProducts(arrayOfProducts);
+cCreateProducts(arrayOfProducts);
+
+let products = document.querySelectorAll(".product");
+
+products.forEach(product => {
+    product.addEventListener("mouseenter", (event) => {
+        cShowProductAdditionalInfo(event.target);
+        console.log(event.target);
+    });
+
+    product.addEventListener("mouseleave", (event) => {
+        cHideProductAdditionalInfo(event.target);
+        console.log(event.target);
+    });
+});
+
+
+
 

@@ -19,7 +19,7 @@
 
 .product_theme_original {
   width: 152px;
-  border: 3px solid #eb5c3e;
+  border: 3px solid pink;
   background-color: pink; }
 
 .product__img-container_theme_original {
@@ -100,7 +100,7 @@
 
 .product__line_theme_original {
   width: 100%;
-  background-color: red;
+  background-color: #f0f0f0;
   height: 1px; }
 
 .product__black-stars-container_theme_original,
@@ -120,7 +120,7 @@
   height: 12px;
   padding: 0 10px; }
 
-.product__black-stars-container_theme_original {
+.product__orange-stars-container_close {
   display: none; }
 
 .product__star-img_theme_original {
@@ -133,6 +133,9 @@
 .product__additional-info_theme_original {
   margin: 0 auto 10px;
   width: 135px; }
+
+.product__additional-info_close {
+  display: none; }
 
 .product__text-description_theme_original {
   font-size: 11px;
