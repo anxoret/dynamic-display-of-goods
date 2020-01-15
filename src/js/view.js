@@ -3,7 +3,7 @@
 let productPropertyNames = [
     "name",
     "imgSrc", 
-    "alt", 
+    "imgAlt", 
     "dollarPrice", 
     "centPrice", 
     "ratingStarsAmount", 
@@ -32,7 +32,7 @@ const vCheckProductData = (product) => {
 const vGetRatingStars = (starSrc, starAlt, starsAmount) => {
     let starsHtmlStr = "";
     
-    for (let starNumber; starNumber < starsAmount; starNumber++) {
+    for (let starNumber = 0; starNumber < starsAmount; starNumber++) {
         starsHtmlStr += `
             <img class="product__star-img product__star-img_theme_original" src=${starSrc} alt=${starAlt}>
         `;
@@ -45,10 +45,10 @@ const vGetProductRatingContent = (product) => {
     let productRatingContent = `
         <div class="product__line product__line_theme_original"></div>
         <div class="product__black-stars-container product__black-stars-container_theme_original">
-            ${vGetRatingStars("./img/black-star.png", "black-star", product[ratingStarsAmount])}
+            ${vGetRatingStars("./img/black-star.png", "black-star", product.ratingStarsAmount)}
         </div>
         <div class="product__orange-stars-container product__orange-stars-container_theme_original">
-            ${vGetRatingStars("./img/orange-star.png", "orange-star", product[ratingStarsAmount])}
+            ${vGetRatingStars("./img/orange-star.png", "orange-star", product.ratingStarsAmount)}
         </div>
     `;
 
@@ -70,8 +70,8 @@ const vCreateProduct = (product) => {
 
     let productImg = document.createElement("img");
     productImg.className = "product__img product__img_theme_original";
-    productImg.setAttribute("src", product[src]);
-    productImg.setAttribute("alt", product[alt]);
+    productImg.setAttribute("src", product.imgSrc);
+    productImg.setAttribute("alt", product.imgAlt);
     productImgContainer.append(productImg);
 
     let productName = document.createElement("p");
@@ -90,18 +90,22 @@ const vCreateProduct = (product) => {
 
     let productDollarsSpan = document.createElement("span");
     productDollarsSpan.className = "product__dollars-span product__dollars-span_theme_original";
-    productDollarsSpan.textContent = product.dollarPrice;
+    productDollarsSpan.textContent = product.dollarPrice + ".";
     productPrice.append(productDollarsSpan);
 
     let productCentsSpan = document.createElement("span");
     productCentsSpan.className = "product__cents-span product__cents-span_theme_original";
-    productCentsSpan.textContent = product.centPrice;
+    if (product.centPrice < 9) {
+        productCentsSpan.textContent = "0" + product.centPrice;
+    } else {
+        productCentsSpan.textContent = product.centPrice;
+    }
     productPrice.append(productCentsSpan);
 
     let productButton = document.createElement("button");
     productButton.className = "product__button product__button_theme_original";
     productButton.innerHTML = `<span class="product__button-span product__button-span_original">Add to Cart</span>`;
-    productPrice.append(productButton);
+    productPurchaseInformation.append(productButton);
 
     let productRating = document.createElement("div");
     productRating.className = "product__rating product__rating_theme_original";
@@ -110,12 +114,12 @@ const vCreateProduct = (product) => {
 
     let productAdditionalInfo = document.createElement("div");
     productAdditionalInfo.className = "product__additional-info product__additional-info_theme_original";
-    productAdditionalInfo.innerHTML = `<p class="product__text-description product__text-description_theme_original">${product[textDescription]}</p>`;
+    productAdditionalInfo.innerHTML = `<p class="product__text-description product__text-description_theme_original">${product.textDescription}</p>`;
     vProduct.append(productAdditionalInfo);
 };
 
 export const vCreateProducts = (arrayOfProducts) => {
-    for (let product in arrayOfProducts) {
+    arrayOfProducts.forEach(product => {
         vCreateProduct(product);
-    }
+    });   
 };

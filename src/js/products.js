@@ -6,10 +6,10 @@ let arrayOfProducts = [
     {
         name: "Coalesce: Functioning On Impatience T-Shirt",
         imgSrc: "./img/coalesce-functioning-on-impatience-t-shirt.png",
-        alt: "coalesce-functioning-on-impatience-t-shirt",
+        imgAlt: "coalesce-functioning-on-impatience-t-shirt",
         dollarPrice: 15,
         centPrice: 0,
-        ratingStarsNumber: 3,
+        ratingStarsAmount: 3,
         textDescription: `When you're dress-hunting, you want to find something that's fun, 
             comfortable, flattering, and uniquely you! So, why not start with a sundress? They 
             always brighten up the environment around you and inspire positivity wherever you go! 
@@ -18,10 +18,10 @@ let arrayOfProducts = [
     {
         name: "Ink Eater: Krylon Bombear Destroyed Tee",
         imgSrc: "./img/ink-eater-krylon-bombear-destroyed-tee.png",
-        alt: "ink-eater-krylon-bombear-destroyed-tee",
+        imgAlt: "ink-eater-krylon-bombear-destroyed-tee",
         dollarPrice: 22,
         centPrice: 0,
-        ratingStarsNumber: 5,
+        ratingStarsAmount: 5,
         textDescription: `When you're dress-hunting, you want to find something that's fun, 
             comfortable, flattering, and uniquely you! So, why not start with a sundress? They 
             always brighten up the environment around you and inspire positivity wherever you go! 
@@ -30,10 +30,10 @@ let arrayOfProducts = [
     {
         name: "The Only Children: Paisley T-Shirt",
         imgSrc: "./img/the-only-children-paisley-t-shirt.png",
-        alt: "the-only-children-paisley-t-shirt",
+        imgAlt: "the-only-children-paisley-t-shirt",
         dollarPrice: 55,
         centPrice: 0,
-        ratingStarsNumber: 1,
+        ratingStarsAmount: 1,
         textDescription: `When you're dress-hunting, you want to find something that's fun, 
             comfortable, flattering, and uniquely you! So, why not start with a sundress? They 
             always brighten up the environment around you and inspire positivity wherever you go! 
@@ -41,11 +41,11 @@ let arrayOfProducts = [
     },
     {
         name: "Coalesce: Functioning On Impatience T-Shirt",
-        imgSrc: "./img/coalesce-functioning-on-impatience-t-shirt",
-        alt: "coalesce-functioning-on-impatience-t-shirt",
+        imgSrc: "./img/coalesce-functioning-on-impatience-t-shirt.png",
+        imgAlt: "coalesce-functioning-on-impatience-t-shirt",
         dollarPrice: 15,
         centPrice: 0,
-        ratingStarsNumber: 3,
+        ratingStarsAmount: 3,
         textDescription: `When you're dress-hunting, you want to find something that's fun, 
             comfortable, flattering, and uniquely you! So, why not start with a sundress? They 
             always brighten up the environment around you and inspire positivity wherever you go! 
@@ -53,11 +53,11 @@ let arrayOfProducts = [
     },
     {
         name: "Zolof The Rock And Roll Destroyer: LOL Cat T-shirt",
-        imgSrc: "./img/zolof-the-rock-and-roll-destroyer-lol-cat-t-shirt",
-        alt: "zolof-the-rock-and-roll-destroyer-lol-cat-t-shirt",
+        imgSrc: "./img/zolof-the-rock-and-roll-destroyer-lol-cat-t-shirt.png",
+        imgAlt: "zolof-the-rock-and-roll-destroyer-lol-cat-t-shirt",
         dollarPrice: 13,
         centPrice: 50,
-        ratingStarsNumber: 5,
+        ratingStarsAmount: 5,
         textDescription: `When you're dress-hunting, you want to find something that's fun, 
             comfortable, flattering, and uniquely you! So, why not start with a sundress? They 
             always brighten up the environment around you and inspire positivity wherever you go! 
@@ -65,11 +65,11 @@ let arrayOfProducts = [
     },
     {
         name: "The Get Up Kids: Band Camp Pullover Hoodie",
-        imgSrc: "./img/the-get-up-kids-band-camp-pullover-hoodie",
-        alt: "the-get-up-kids-band-camp-pullover-hoodie",
+        imgSrc: "./img/the-get-up-kids-band-camp-pullover-hoodie.png",
+        imgAlt: "the-get-up-kids-band-camp-pullover-hoodie",
         dollarPrice: 12,
         centPrice: 30,
-        ratingStarsNumber: 1,
+        ratingStarsAmount: 1,
         textDescription: `When you're dress-hunting, you want to find something that's fun, 
             comfortable, flattering, and uniquely you! So, why not start with a sundress? They 
             always brighten up the environment around you and inspire positivity wherever you go! 
@@ -77,11 +77,11 @@ let arrayOfProducts = [
     },
     {
         name: "Kenneth Cole New York Men's Con-verge Slip-on",
-        imgSrc: "./img/kenneth-cole-new-york-men-s-con-verge-slip-on",
-        alt: "kenneth-cole-new-york-men-s-con-verge-slip-on",
+        imgSrc: "./img/kenneth-cole-new-york-men-s-con-verge-slip-on.png",
+        imgAlt: "kenneth-cole-new-york-men-s-con-verge-slip-on",
         dollarPrice: 169,
         centPrice: 99,
-        ratingStarsNumber: 3,
+        ratingStarsAmount: 3,
         textDescription: `When you're dress-hunting, you want to find something that's fun, 
             comfortable, flattering, and uniquely you! So, why not start with a sundress? They 
             always brighten up the environment around you and inspire positivity wherever you go! 
@@ -89,11 +89,11 @@ let arrayOfProducts = [
     },
     {
         name: "ASICS® Men's GEL-Kayano® XII",
-        imgSrc: "./img/asics-men-s-gel-kayano-xii",
-        alt: "asics-men-s-gel-kayano-xii",
+        imgSrc: "./img/asics-men-s-gel-kayano-xii.png",
+        imgAlt: "asics-men-s-gel-kayano-xii",
         dollarPrice: 134,
         centPrice: 99,
-        ratingStarsNumber: 5,
+        ratingStarsAmount: 5,
         textDescription: `When you're dress-hunting, you want to find something that's fun, 
             comfortable, flattering, and uniquely you! So, why not start with a sundress? They 
             always brighten up the environment around you and inspire positivity wherever you go! 
@@ -101,11 +101,11 @@ let arrayOfProducts = [
     },
     {
         name: "CN Clogs Beach/Garden Clog",
-        imgSrc: "./img/cn-clogs-beach-garden-clog",
-        alt: "cn-clogs-beach-garden-clog",
+        imgSrc: "./img/cn-clogs-beach-garden-clog.png",
+        imgAlt: "cn-clogs-beach-garden-clog",
         dollarPrice: 15,
         centPrice: 99,
-        ratingStarsNumber: 1,
+        ratingStarsAmount: 1,
         textDescription: `When you're dress-hunting, you want to find something that's fun, 
             comfortable, flattering, and uniquely you! So, why not start with a sundress? They 
             always brighten up the environment around you and inspire positivity wherever you go! 

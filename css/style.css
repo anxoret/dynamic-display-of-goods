@@ -4,64 +4,81 @@
   border: 0;
   font-family: Arial, sans-serif; }
 
-.goods_theme_original {
+.products_theme_original {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 475px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   background-color: green; }
 
-.goods-item_theme_original {
-  width: 153px;
+.product_theme_original {
+  width: 152px;
   border: 3px solid #eb5c3e;
   background-color: pink; }
 
-.goods-item__img-container_theme_original {
-  margin-top: 9px;
-  margin-left: 7px; }
+.product__img-container_theme_original {
+  margin-top: 9px; }
 
-.goods-item__name_theme_original {
-  margin-left: 8px;
-  margin-top: 6px;
+.product__img_theme_original {
+  display: block;
+  margin: 0 auto;
+  width: 135px; }
+
+.product__name_theme_original {
+  margin: 10px auto 0;
   height: 53px;
+  width: 135px;
   font-size: 13px;
   line-height: 16px; }
 
-.goods-item__purchase-information_theme_original {
-  position: relative;
-  margin-top: 5px;
-  height: 30px; }
+.product__purchase-information_theme_original {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 5px auto 0;
+  height: 30px;
+  width: 135px; }
 
-.goods-item__price_theme_original,
-.goods-item__button_theme_original {
-  display: inline-block; }
-
-.goods-item__price_theme_original {
-  position: absolute;
-  top: 2px;
-  left: 8px;
+.product__price_theme_original {
+  padding-top: 3px;
   font-size: 14px;
   background-color: goldenrod; }
-  .goods-item__price_theme_original .goods-item__dollars-span_theme_original {
-    font-size: 17px; }
-  .goods-item__price_theme_original .goods-item__cents-span_theme_original {
-    font-size: 12px;
+  .product__price_theme_original .product__dollars-span_theme_original {
+    font-size: 17px;
     font-weight: bold; }
+  .product__price_theme_original .product__cents-span_theme_original {
+    font-size: 11px; }
 
-.goods-item__button_theme_original {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  right: 12px;
+.product__button_theme_original {
+  position: relative;
   background-color: #eb5c3e;
   width: 74px;
   height: 30px; }
 
-.goods-item__button-span_original {
+.product__button-span_original {
   position: absolute;
-  top: 7px;
-  left: 7px;
+  top: 6px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
   font-size: 12px;
   color: #ffffff; }
 
-.goods-item__rating_theme_original {
+.product__rating_theme_original {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,18 +93,18 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 50px;
+  height: 48px;
   background-color: forestgreen;
-  margin-left: 7px;
-  margin-right: 11px; }
+  width: 135px;
+  margin: 0 auto; }
 
-.goods-item__line_theme_original {
+.product__line_theme_original {
   width: 100%;
   background-color: red;
   height: 1px; }
 
-.goods-item__black-stars-container_theme_original,
-.goods-item__orange-stars-container_theme_original {
+.product__black-stars-container_theme_original,
+.product__orange-stars-container_theme_original {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,24 +117,23 @@
   justify-content: center;
   position: absolute;
   background-color: #fafafa;
-  width: 57px;
-  height: 12px; }
+  height: 12px;
+  padding: 0 10px; }
 
-.goods-item__black-stars-container_theme_original {
+.product__black-stars-container_theme_original {
   display: none; }
 
-.goods-item__star-img_theme_original {
+.product__star-img_theme_original {
   margin-right: 2px;
   width: 12px;
   height: 11px; }
-  .goods-item__star-img_theme_original:last-child {
+  .product__star-img_theme_original:last-child {
     margin-right: 0; }
 
-.goods-item__additional-info_theme_original {
-  margin-left: 8px;
-  margin-right: 8px;
-  padding-bottom: 9px; }
+.product__additional-info_theme_original {
+  margin: 0 auto 10px;
+  width: 135px; }
 
-.goods-item__text-description_theme_original {
+.product__text-description_theme_original {
   font-size: 11px;
   line-height: 14px; }
