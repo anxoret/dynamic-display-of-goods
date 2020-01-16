@@ -10,6 +10,13 @@ let productPropertyNames = [
     "textDescription"
     ];
 
+// let aa = 
+//     [ 1
+//     , 2
+//     , 3
+//     , 
+//     ];
+
 const vCheckProductData = (product) => {
     let errorText = "";
     
