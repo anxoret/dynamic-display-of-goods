@@ -14,13 +14,15 @@
   -ms-flex-direction: row;
   flex-direction: row;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  background-color: green; }
+  flex-wrap: wrap; }
 
 .product_theme_original {
   width: 152px;
-  border: 3px solid pink;
-  background-color: pink; }
+  border: 3px solid white;
+  background-color: white; }
+
+.product_mouseenter {
+  border-color: #eb5c3e #eb5c3e white #eb5c3e; }
 
 .product__img-container_theme_original {
   margin-top: 9px; }
@@ -41,26 +43,26 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 5px auto 0;
+  height: 30px;
+  width: 135px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 5px auto 0;
-  height: 30px;
-  width: 135px; }
+  justify-content: space-between; }
 
 .product__price_theme_original {
-  padding-top: 3px;
-  font-size: 14px;
-  background-color: goldenrod; }
+  padding-top: 2px;
+  font-size: 14px; }
   .product__price_theme_original .product__dollars-span_theme_original {
     font-size: 17px;
     font-weight: bold; }
   .product__price_theme_original .product__cents-span_theme_original {
-    font-size: 11px; }
+    font-size: 12px;
+    font-weight: bold; }
 
 .product__button_theme_original {
   position: relative;
@@ -78,6 +80,9 @@
   font-size: 12px;
   color: #ffffff; }
 
+.product__wrapper_theme_original {
+  position: relative; }
+
 .product__rating_theme_original {
   position: relative;
   display: -webkit-box;
@@ -94,7 +99,6 @@
   -ms-flex-align: center;
   align-items: center;
   height: 48px;
-  background-color: forestgreen;
   width: 135px;
   margin: 0 auto; }
 
@@ -116,7 +120,7 @@
   -ms-flex-pack: center;
   justify-content: center;
   position: absolute;
-  background-color: #fafafa;
+  background-color: white;
   height: 12px;
   padding: 0 10px; }
 
@@ -131,12 +135,25 @@
     margin-right: 0; }
 
 .product__additional-info_theme_original {
-  margin: 0 auto 10px;
-  width: 135px; }
+  position: absolute;
+  top: 48px;
+  left: -3px;
+  right: 0;
+  margin: auto;
+  padding-bottom: 11px;
+  width: 152px;
+  background-color: white;
+  border: 3px solid #eb5c3e;
+  border-top: none;
+  -webkit-box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
+  z-index: 2; }
 
 .product__additional-info_close {
   display: none; }
 
 .product__text-description_theme_original {
+  margin: 0 auto;
+  width: 135px;
   font-size: 11px;
   line-height: 14px; }

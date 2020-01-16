@@ -12,13 +12,18 @@
 	width: 475px;
 	flex-direction: row;
 	flex-wrap: wrap;
-	background-color: green;
+	// background-color: green;
 }
 
 .product_theme_original {
-	width: 152px;
-	border: 3px solid pink;
-	background-color: pink; // white!
+	width: $productWidth;
+	border: 3px solid white;
+	background-color: white; 
+}
+
+.product_mouseenter {
+	border-color: $borderColor $borderColor white $borderColor;
+	// box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .product__img-container_theme_original {
@@ -41,11 +46,11 @@
 
 .product__purchase-information_theme_original {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 	margin: 5px auto 0;
 	height: 30px;
 	width: $imgWidth;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .product__price_theme_original,
@@ -54,10 +59,10 @@
 }
 
 .product__price_theme_original {
-	padding-top: 3px;
+	padding-top: 2px;
 	font-size: 14px;
 	// font-weight: bold;
-	background-color: goldenrod;
+	// background-color: goldenrod;
 
 	.product__dollars-span_theme_original {
 		font-size: 17px;
@@ -65,8 +70,8 @@
 	}
 
 	.product__cents-span_theme_original {
-		font-size: 11px;
-		// font-weight: bold;
+		font-size: 12px;
+		font-weight: bold;
 	}
 }
 
@@ -88,14 +93,18 @@
 	color: #ffffff;
 }
 
+.product__wrapper_theme_original {
+	position: relative;
+}
+
 .product__rating_theme_original {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 48px;
-	background-color: forestgreen;
+	height: $productRatingHeight;
+	// background-color: forestgreen;
 	width: $imgWidth;
 	margin: 0 auto;
 }
@@ -112,17 +121,9 @@
 	flex-direction: row;
 	justify-content: center;
 	position: absolute;
-	background-color: #fafafa;
+	background-color: white;
 	height: 12px;
 	padding: 0 10px;
-}
-
-.product__black-stars-container_theme_original {
-
-}
-
-.product__orange-stars-container_theme_original {
-
 }
 
 .product__orange-stars-container_close {
@@ -140,8 +141,18 @@
 }
 
 .product__additional-info_theme_original {
-	margin: 0 auto 10px;
-	width: $imgWidth;
+	position: absolute;
+	top: $productRatingHeight;
+	left: -3px;
+	right: 0;
+	margin: auto;
+	padding-bottom: 11px;
+	width: $productWidth;
+	background-color: white;
+	border: 3px solid $borderColor;
+	border-top: none;
+	box-shadow: 0 7px 7px rgba(0,0,0,0.20);
+	z-index: 2;
 }
 
 .product__additional-info_close {
@@ -149,6 +160,8 @@
 }
   
 .product__text-description_theme_original {
+	margin: 0 auto;
+	width: $imgWidth;
 	font-size: 11px;
 	line-height: 14px;
 }

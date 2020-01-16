@@ -107,15 +107,19 @@ const vCreateProduct = (product) => {
     productButton.innerHTML = `<span class="product__button-span product__button-span_original">Add to Cart</span>`;
     productPurchaseInformation.append(productButton);
 
+    let productWrapper = document.createElement("div");
+    productWrapper.className = "product__wrapper product__wrapper_theme_original";
+    vProduct.append(productWrapper);
+
     let productRating = document.createElement("div");
     productRating.className = "product__rating product__rating_theme_original";
     productRating.innerHTML = vGetProductRatingContent(product);
-    vProduct.append(productRating);
+    productWrapper.append(productRating);
 
     let productAdditionalInfo = document.createElement("div");
     productAdditionalInfo.className = "product__additional-info product__additional-info_theme_original product__additional-info_close";
     productAdditionalInfo.innerHTML = `<p class="product__text-description product__text-description_theme_original">${product.textDescription}</p>`;
-    vProduct.append(productAdditionalInfo);
+    productWrapper.append(productAdditionalInfo);
 };
 
 export const vCreateProducts = (arrayOfProducts) => {
@@ -125,11 +129,13 @@ export const vCreateProducts = (arrayOfProducts) => {
 };
 
 export const vShowProductAdditionalInfo = (vProduct) => {
+    vProduct.classList.add("product_mouseenter");
     let productAdditionalInfo = vProduct.querySelector(".product__additional-info");
     productAdditionalInfo.classList.remove("product__additional-info_close");
 };
 
 export const vHideProductAdditionalInfo = (vProduct) => {
+    vProduct.classList.remove("product_mouseenter");
     let productAdditionalInfo = vProduct.querySelector(".product__additional-info");
     productAdditionalInfo.classList.add("product__additional-info_close");
 };
