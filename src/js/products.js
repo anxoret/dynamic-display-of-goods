@@ -122,12 +122,10 @@ let products = document.querySelectorAll(".product");
 products.forEach(product => {
     product.addEventListener("mouseenter", (event) => {
         cShowProductAdditionalInfo(event.target);
-        console.log(event.target);
     });
 
     product.addEventListener("mouseleave", (event) => {
         cHideProductAdditionalInfo(event.target);
-        console.log(event.target);
     });
 });
 

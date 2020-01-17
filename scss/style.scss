@@ -71,9 +71,9 @@
 
 .product__button_theme_original {
 	position: relative;
-    background-color: $buttonBackgroundColor;
 	width: 74px;
-    height: 30px;
+	height: 30px;
+	background-color: $buttonBackgroundColor;
 }
 
 .product__button-span_original {
@@ -92,8 +92,8 @@
 }
 
 .product__rating_theme_original {
-	position: relative;
 	display: flex;
+	position: relative;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -111,9 +111,9 @@
 .product__black-stars-container_theme_original,
 .product__orange-stars-container_theme_original {
 	display: flex;
+	position: absolute;
 	flex-direction: row;
 	justify-content: center;
-	position: absolute;
 	background-color: white;
 	height: 12px;
 	padding: 0 10px;

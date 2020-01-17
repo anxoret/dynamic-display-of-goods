@@ -72,9 +72,9 @@
 
 .product__button_theme_original {
   position: relative;
-  background-color: #eb5c3e;
   width: 74px;
-  height: 30px; }
+  height: 30px;
+  background-color: #eb5c3e; }
 
 .product__button-span_original {
   position: absolute;
@@ -90,10 +90,10 @@
   position: relative; }
 
 .product__rating_theme_original {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -118,6 +118,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -125,7 +126,6 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: absolute;
   background-color: white;
   height: 12px;
   padding: 0 10px; }
