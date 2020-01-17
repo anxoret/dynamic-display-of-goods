@@ -22,7 +22,9 @@
   background-color: white; }
 
 .product_mouseenter {
-  border-color: #eb5c3e #eb5c3e white #eb5c3e; }
+  border-color: #eb5c3e #eb5c3e white #eb5c3e;
+  -webkit-box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2); }
 
 .product__img-container_theme_original {
   margin-top: 9px; }

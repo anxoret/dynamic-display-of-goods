@@ -12,7 +12,6 @@
 	width: 475px;
 	flex-direction: row;
 	flex-wrap: wrap;
-	// background-color: green;
 }
 
 .product_theme_original {
@@ -23,7 +22,7 @@
 
 .product_mouseenter {
 	border-color: $borderColor $borderColor white $borderColor;
-	// box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	box-shadow: 0 7px 7px rgba(0,0,0,0.20);
 }
 
 .product__img-container_theme_original {
@@ -53,16 +52,9 @@
 	justify-content: space-between;
 }
 
-.product__price_theme_original,
-.product__button_theme_original {
-	// display: inline-block;
-}
-
 .product__price_theme_original {
 	padding-top: 2px;
 	font-size: 14px;
-	// font-weight: bold;
-	// background-color: goldenrod;
 
 	.product__dollars-span_theme_original {
 		font-size: 17px;
@@ -104,7 +96,6 @@
 	justify-content: center;
 	align-items: center;
 	height: $productRatingHeight;
-	// background-color: forestgreen;
 	width: $imgWidth;
 	margin: 0 auto;
 }
